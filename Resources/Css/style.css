@@ -30,10 +30,24 @@ section{
     padding:80px 0;
 }
 
+.box{
+    padding:1%;
+}
+
+.clearfix{zoom:1;}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display: block;
+    height:0;
+    visibility: hidden;
+}
+
 /*-------------Headings-------------*/
 
 h1,
-h2{
+h2,
+h3{
     font-weight:300;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -64,12 +78,63 @@ h2:after{
     margin-top:30px;
 }
 
+h3{
+    font-size:110%;
+    margin-bottom:15px;
+    letter-spacing: 0px;
+}
+
 /*----------Paragraphs---------*/
 
 .long-copy{
     line-height: 145%;
     width:70%;
     margin-left: 15%;
+}
+
+.box p{
+    font-size:90%;
+    line-height: 145%;
+}
+
+/*------------Icons------------*/
+
+.icon-big{
+    font-size: 350%;
+    color:#e67e22;
+    margin-bottom: 10px;
+    display:block;
+}
+
+.icon-small{
+    display: inline-block;
+    width:30px;
+    text-align: center;
+    color:#e67e22;
+    font-size: 120%;
+    margin-right:10px;
+    
+    /*secrets to allign texts and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/*-----------Links-----------*/
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color:#e67e22;
+    border-bottom:1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border 0.2s,color 0.2 s;
+}
+
+a:hover,
+a:active{
+    color:#555;
+    border-bottom:1px solid transparent;
 }
 
 /*-----------Buttons-----------*/
@@ -165,13 +230,123 @@ header{
     border-bottom: 2px solid #e67e22;
 }
 
+/*--------------------------------------------*/
+/*-----------------Meals Section-------------*/
+/*-------------------------------------------*/
+
+.section-features .long-copy{
+    margin-bottom:30px;
+}
+
+/*--------------------------------------------*/
+/*-----------------Meals Section-------------*/
+/*-------------------------------------------*/
 
 
+.meals-section{
+    padding:0;
+}
 
+.meal-showcase{
+    list-style: none;
+    width:100%;
+}
 
+.meal-showcase li{
+    display:block;
+    width:25%;
+    float:left;
+}
 
+.meal-photo{
+    width:100%;
+    margin:0;
+    overflow:hidden;
+    background-color:#000;
+}
 
+.meal-photo img{
+    opacity:0.7;
+    width:100%;
+    height:auto;
+    transform:scale(1.15);
+    transition: transform 0.5s,opacity 0.5s;
+}
 
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/*--------------------------------------------*/
+/*-----------------How it works-------------*/
+/*-------------------------------------------*/
+
+.section-steps{
+    background-color: #f4f4f4;
+}
+
+.steps-box1{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box2{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.work-steps{
+    margin-bottom: 50px;
+}
+
+.work-steps div{
+    color:#e67e22;
+    border: 2px solid #e67e22;
+    display:inline-block;
+    border-radius: 50%;
+    height:55px;
+    width:55px;
+    text-align: center;
+    float: left;
+    font-size: 150%;
+    padding:5px;
+    margin-right: 25px;
+}
+
+.work-steps p{
+    padding-top:2px;
+}
+
+.last_of-type{
+    margin-bottom: 80px;
+}
+
+.btn-app:link,
+.btn-app:visited{
+    border:0;
+}
+
+.btn-app img{
+    height:50px;
+    width:auto;
+    margin-right: 10px;
+}
+
+/*--------------------------------------------*/
+/*-----------------Cities-------------*/
+/*-------------------------------------------*/
+
+.box img{
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+}
 
 
 
